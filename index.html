@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <title>Cotizaciones</title>
 </head>
-<body>
+<body onload="cargaTitulo(), obtCotizaciones(), mostrarCotizaciones()">
+    <!-- <script>
+        async function obtenerDatos(){
+            let respuestaPokeapi = await fetch('https://pokeapi.co/api/v2/pokemon/150');
+            let datosPokemon = await respuestaPokeapi.json();
+
+            console.log(datosPokemon);
+        }
+
+        obtenerDatos();
+    </script> -->
+
+    <div class="titulo">
+        <h1 id="txtTitulo"></h1>
+        <img src="" alt="Logo" id="logo" class="logo">
+    </div>
+
+    <div class="dolar-euro" id="dolar-euro">
+        <div></div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxqjxZfKbWUqdwIkh8EwE-pzjO0PkV4Snbw&usqp=CAU" alt="chile" class="chile">
+    </div>
+
+    <div class="dolar" id="dolar">
+        <div></div>
+        <img src="https://img.freepik.com/vector-premium/bandera-estados-unidos-america-boton-bandera-estados-unidos_97458-15.jpg" alt="eeuu" class="eeuu">
+    </div>
+
     
 
     <script src="/app.js"></script>
